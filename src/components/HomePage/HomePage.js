@@ -20,8 +20,6 @@ import properties from '../../data/properties.json';
 
 class HomePage extends Component {
     render() {
-        const { classes } = this.props;
-
         return (
             <div className="home-page">
                 <PropertyList properties={properties} />
