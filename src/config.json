@@ -1,8 +1,8 @@
 {
     "graphQL": {
-        "url": ""
+        "url": "https://xapi.homeaway.com/rezfest/graphql"
     },
     "auth": {
-        "sessionId": ""
+        "sessionId": "7f64e090-e632-4c55-a337-6861e4d40b16"
     }
 }
