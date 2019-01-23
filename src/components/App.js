@@ -18,6 +18,7 @@ import {Route} from 'react-router-dom';
 import Header from './Common/Header/Header';
 import PropertyDetails from './PropertyDetails/PropertyDetails';
 import Landing from './Landing/Landing';
+import HomePage from './HomePage/HomePage';
 
 class App extends Component {
     constructor(props) {
@@ -39,8 +40,9 @@ class App extends Component {
                 {/* --- Content (Routes) --- */}
                 <div id="app">
                     {/* ADD NEW ROUTES HERE */}
-                    <Route path={`${this.props.match.path}`} component={Landing} exact/>
-                    <Route path={`${this.props.match.path}/:propertyId`} component={PropertyDetails}/>
+                    <Route path={`${this.props.match.path}demo`} component={Landing} exact/>
+                    <Route path={`${this.props.match.path}demo/:propertyId`} component={PropertyDetails}/>
+                    <Route path={`${this.props.match.path}home`} component={HomePage} exact/>
                 </div>
             </div>
         );
