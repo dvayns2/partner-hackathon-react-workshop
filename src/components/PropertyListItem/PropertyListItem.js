@@ -14,17 +14,24 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 import React, {Component} from 'react';
-import './HomePage.css';
-import PropertyList from '../PropertyList/PropertyList';
+import { Link } from "react-router-dom";
+import './PropertyListItem.css';
 
-class HomePage extends Component {
+export const urlEncodePropertyId = (propertyId) => {
+    const encodedUrl = encodeURI(propertyId); 
+    return encodedUrl;
+};
+
+class PropertyListItem extends Component {
     render() {
+        const detailUrl = urlEncodePropertyId(this.props.externalId);
+
         return (
-            <div className="home-page">
-                <PropertyList />
+            <div className="property-list-item">
+                <div><Link to={`/home/${detailUrl}`}>{this.props.title}</Link></div>
             </div>
         );
     }
 }
 
-export default HomePage;
+export default PropertyListItem
