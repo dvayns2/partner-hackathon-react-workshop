@@ -14,25 +14,49 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 import React, {Component} from 'react';
-import properties from '../../data/properties.json';
+import PropTypes from 'prop-types';
 import PropertyListItem from '../PropertyListItem/PropertyListItem.js';
+import classNames from 'classnames';
+import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
 import './PropertyList.css';
+
+const styles = theme => ({
+    layout: {
+        width: 'auto',
+        marginLeft: theme.spacing.unit * 3,
+        marginRight: theme.spacing.unit * 3,
+        [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+            width: 1100,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+        },
+    },
+    cardGrid: {
+        padding: `${theme.spacing.unit * 8}px 0`,
+    }
+});
 
 class PropertyList extends Component {
     render() {
-        const propertyListItems = properties.map((property) => <PropertyListItem
-                                                            key={property.externalId}
-                                                            externalId={property.externalId}
-                                                            title={property.title} />);
+        const { classes } = this.props;
 
         return (
             <div className="property-list">
-                <ul>
-                    {propertyListItems}
-                </ul>
+                <div className={classNames(classes.layout, classes.cardGrid)}>
+                    <Grid container spacing={40}>
+                        {this.props.properties.map(property => (
+                            <PropertyListItem property={property} />
+                        ))}
+                    </Grid>
+                </div>
             </div>
         );
     }
 }
 
-export default PropertyList
+PropertyList.propTypes = {
+    properties: PropTypes.array
+};
+
+export default withStyles(styles)(PropertyList);
