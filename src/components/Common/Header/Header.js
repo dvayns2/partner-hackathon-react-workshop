@@ -41,7 +41,7 @@ function ButtonAppBar(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            RezFest 2018
+            VacayHomeConnect
           </Typography>
           <Button color="inherit" onClick={props.onClick}>Search</Button>
         </Toolbar>
