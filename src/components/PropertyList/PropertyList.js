@@ -45,7 +45,7 @@ class PropertyList extends Component {
                 <div className={classNames(classes.layout, classes.cardGrid)}>
                     <Grid container spacing={40}>
                         {this.props.properties.map(property => (
-                            <PropertyListItem property={property} />
+                            <PropertyListItem key={property.externalId} property={property} />
                         ))}
                     </Grid>
                 </div>
