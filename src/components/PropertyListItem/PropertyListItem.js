@@ -39,8 +39,8 @@ const styles = theme => ({
     }
 });
 
-export const urlEncodePropertyId = (propertyId) => {
-    let encodedUrl = encodeURI(propertyId);
+export const urlEncodeExternalId = (externalId) => {
+    let encodedUrl = encodeURI(externalId);
     encodedUrl = encodedUrl.replace(/\//ig, '%2F');
     return encodedUrl;
 };
@@ -70,7 +70,7 @@ class PropertyListItem extends Component {
                         size="small"
                         color="primary"
                         component={Link}
-                        to={`/home/property/${urlEncodePropertyId(property.externalId)}`}>
+                        to={`/home/property/${urlEncodeExternalId(property.externalId)}`}>
                         View
                     </Button>
                 </CardActions>
