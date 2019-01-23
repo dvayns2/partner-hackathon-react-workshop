@@ -16,12 +16,15 @@ limitations under the License.
 import React, {Component} from 'react';
 import './HomePage.css';
 import PropertyList from '../PropertyList/PropertyList';
+import properties from '../../data/properties.json';
 
 class HomePage extends Component {
     render() {
+        const { classes } = this.props;
+
         return (
             <div className="home-page">
-                <PropertyList />
+                <PropertyList properties={properties} />
             </div>
         );
     }
