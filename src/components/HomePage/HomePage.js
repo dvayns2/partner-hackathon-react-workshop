@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 import React, {Component} from 'react';
-import './HomePage.css';
 import PropertyList from '../PropertyList/PropertyList';
 import properties from '../../data/properties.json';
 

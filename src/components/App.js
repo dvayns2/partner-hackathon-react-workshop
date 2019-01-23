@@ -19,6 +19,7 @@ import Header from './Common/Header/Header';
 import PropertyDetails from './PropertyDetails/PropertyDetails';
 import Landing from './Landing/Landing';
 import HomePage from './HomePage/HomePage';
+import SinglePropertyPage from './SinglePropertyPage/SinglePropertyPage';
 
 class App extends Component {
     constructor(props) {
@@ -33,7 +34,6 @@ class App extends Component {
     render() {
         return (
             <div id="app-container">
-
                 {/* --- Header --- */}
                 <Header onClick={this.onSearchClicked}/>
 
@@ -43,6 +43,7 @@ class App extends Component {
                     <Route path={`${this.props.match.path}demo`} component={Landing} exact/>
                     <Route path={`${this.props.match.path}demo/:propertyId`} component={PropertyDetails}/>
                     <Route path={`${this.props.match.path}home`} component={HomePage} exact/>
+                    <Route path={`${this.props.match.path}home/property/:externalId`} component={SinglePropertyPage}/>
                 </div>
             </div>
         );

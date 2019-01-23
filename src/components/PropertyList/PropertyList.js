@@ -19,7 +19,6 @@ import PropertyListItem from '../PropertyListItem/PropertyListItem.js';
 import classNames from 'classnames';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
-import './PropertyList.css';
 
 const styles = theme => ({
     layout: {
