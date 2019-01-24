@@ -205,7 +205,7 @@ class SinglePropertyPage extends Component {
                     </Typography>
                     <Typography paragraph>
                         <strong>There are still {mergedProperty.availability.daysAvailablewithinBookingWindow} of&nbsp;
-                        {mergedProperty.availability.bookingWindow} days available for travelers to book.</strong>
+                        {mergedProperty.availability.bookingWindow} days available within your booking window.</strong>
                     </Typography>
                     <Typography variant="h6">
                         Search Ranking
