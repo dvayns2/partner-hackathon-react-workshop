@@ -62,7 +62,7 @@ class PropertyListItem extends Component {
         if (this.props.data.loading) {
             return <Loading />;
         }
-        
+
         if (!this.props.data.property) {
             return <NotFound />;
         }
@@ -71,30 +71,30 @@ class PropertyListItem extends Component {
 
         return (
             <Grid item key={property.externalId} sm={6} md={4} lg={3}>
-                <Card className={classes.card}>
-                <CardMedia
-                    className={classes.cardMedia}
-                    image={property.image}
-                    title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {property.title}
-                    </Typography>
-                    <Typography>
-                        {property.description}
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button
-                        size="small"
-                        color="primary"
-                        component={Link}
-                        to={`/home/property/${urlEncodeExternalId(property.externalId)}`}>
-                        View
-                    </Button>
-                </CardActions>
-                </Card>
+              <Card className={classes.card}>
+              <CardMedia
+                  className={classes.cardMedia}
+                  image={property.image}
+                  title="Image title"
+              />
+              <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                      {property.title}
+                  </Typography>
+                  <Typography>
+                      {property.description}
+                  </Typography>
+              </CardContent>
+              <CardActions>
+                  <Button
+                      size="small"
+                      color="primary"
+                      component={Link}
+                      to={`/home/property/${urlEncodeExternalId(property.externalId)}`}>
+                      View
+                  </Button>
+              </CardActions>
+              </Card>
             </Grid>
         );
     }
