@@ -47,7 +47,7 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <Typography variant="title" color="inherit" className={classes.flex}>
+          <Typography color="inherit" className={classes.flex}>
             <a href="/home"><img src={logo} className={classes.logo} alt={'VacayHomeConnect logo'} /></a>
           </Typography>
         </Toolbar>
