@@ -8,6 +8,12 @@ export default gql`
                     name
                     marketSize
                 }
+                markets {
+                  uuid
+                  name
+                  marketSize
+                  bookingPercent
+                }
                 scorecard {
                     minStay {
                         rankInMarket
