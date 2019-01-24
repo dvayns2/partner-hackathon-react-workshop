@@ -36,7 +36,8 @@ const styles = theme => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        maxWidth: 345,
+        // maxWidth: 345,
+        marginBottom: 20
     },
     cardMedia: {
         paddingTop: '56.25%',
@@ -75,8 +76,7 @@ class PropertyListItem extends Component {
         const { property, classes } = this.props;
 
         return (
-          <Grid item key={property.externalId} sm={6} md={4} lg={3}>
-            <Card className={classes.card}>
+            <Card className={classes.card} key={property.externalId}>
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
@@ -99,7 +99,6 @@ class PropertyListItem extends Component {
                   </Button>
                 </CardActions>
             </Card>
-          </Grid>
         );
     }
 }
