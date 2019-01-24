@@ -92,10 +92,6 @@ class SinglePropertyPage extends Component {
     }
 }
 
-// SinglePropertyPage.propTypes = {
-//     property: PropTypes.object.isRequired
-// };
-
 export default withStyles(styles)(graphql(propertyQuery, {
     options: (ownProps) => ({variables: {propertyId: ownProps.match.params.externalId}})
 })(SinglePropertyPage));

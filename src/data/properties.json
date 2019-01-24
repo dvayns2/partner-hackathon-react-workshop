@@ -3,7 +3,14 @@
       "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44712/ISI-V-0805 48992 44712",
       "title":"Absolutely Perfect",
       "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ABSOLUTELY/L1.jpg",
-      "_boost":{
+      "availability":{
+         "bookingWindow":76,
+         "daysAvailablewithinBookingWindow":62,
+         "daysAvailableWithin30Days":24,
+         "daysAvailableWithin60Days":52,
+         "daysAvailableWithin90Days":76
+      },
+      "boost":{
          "opportunities":{
             "creditBalance":352,
             "opportunities":[
@@ -29,13 +36,64 @@
                }
             ]
          }
-      }
+      },
+      "recommendedChanges":[
+         {
+            "maxDays":90,
+            "minDays":60,
+            "recommendations":5,
+            "expectedIncreasedOfViews":3.9
+         },
+         {
+            "maxDays":60,
+            "minDays":45,
+            "recommendations":5,
+            "expectedIncreasedOfViews":2.5
+         },
+         {
+            "maxDays":45,
+            "minDays":30,
+            "recommendations":5,
+            "expectedIncreasedOfViews":5.6
+         },
+         {
+            "maxDays":30,
+            "minDays":14,
+            "recommendations":3,
+            "expectedIncreasedOfViews":8.3
+         },
+         {
+            "maxDays":14,
+            "minDays":7,
+            "recommendations":3,
+            "expectedIncreasedOfViews":6.1
+         },
+         {
+            "maxDays":7,
+            "minDays":5,
+            "recommendations":2,
+            "expectedIncreasedOfViews":2.6
+         },
+         {
+            "maxDays":5,
+            "minDays":0,
+            "recommendations":1,
+            "expectedIncreasedOfViews":4.7
+         }
+      ]
    },
    {
       "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44713/ISI-V-0805 48992 44713",
       "title":"Coronado Arms",
       "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ADAMS/L1.jpg",
-      "_boost":{
+      "availability":{
+         "bookingWindow":132,
+         "daysAvailablewithinBookingWindow":40,
+         "daysAvailableWithin30Days":9,
+         "daysAvailableWithin60Days":23,
+         "daysAvailableWithin90Days":40
+      },
+      "boost":{
          "opportunities":{
             "creditBalance":178,
             "opportunities":[
@@ -51,13 +109,64 @@
                }
             ]
          }
-      }
+      },
+      "recommendedChanges":[
+         {
+            "maxDays":90,
+            "minDays":60,
+            "recommendations":5,
+            "expectedIncreasedOfViews":3.9
+         },
+         {
+            "maxDays":60,
+            "minDays":45,
+            "recommendations":5,
+            "expectedIncreasedOfViews":2.5
+         },
+         {
+            "maxDays":45,
+            "minDays":30,
+            "recommendations":5,
+            "expectedIncreasedOfViews":5.6
+         },
+         {
+            "maxDays":30,
+            "minDays":14,
+            "recommendations":3,
+            "expectedIncreasedOfViews":8.3
+         },
+         {
+            "maxDays":14,
+            "minDays":7,
+            "recommendations":3,
+            "expectedIncreasedOfViews":6.1
+         },
+         {
+            "maxDays":7,
+            "minDays":5,
+            "recommendations":2,
+            "expectedIncreasedOfViews":2.6
+         },
+         {
+            "maxDays":5,
+            "minDays":0,
+            "recommendations":1,
+            "expectedIncreasedOfViews":4.7
+         }
+      ]
    },
    {
       "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44714/ISI-V-0805 48992 44714",
       "title":"Island Sunrise",
       "image":"http://images.ciirus.com/properties/49410/243091/images/hd/Front2.jpg",
-      "_boost":{
+      "availability":{
+         "bookingWindow":136,
+         "daysAvailablewithinBookingWindow":35,
+         "daysAvailableWithin30Days":11,
+         "daysAvailableWithin60Days":11,
+         "daysAvailableWithin90Days":35
+      },
+      "boost":{
          "opportunities":{
             "creditBalance":268,
             "opportunities":[
@@ -83,13 +192,64 @@
                }
             ]
          }
-      }
+      },
+      "recommendedChanges":[
+         {
+            "maxDays":90,
+            "minDays":60,
+            "recommendations":5,
+            "expectedIncreasedOfViews":3.9
+         },
+         {
+            "maxDays":60,
+            "minDays":45,
+            "recommendations":5,
+            "expectedIncreasedOfViews":2.5
+         },
+         {
+            "maxDays":45,
+            "minDays":30,
+            "recommendations":5,
+            "expectedIncreasedOfViews":5.6
+         },
+         {
+            "maxDays":30,
+            "minDays":14,
+            "recommendations":3,
+            "expectedIncreasedOfViews":8.3
+         },
+         {
+            "maxDays":14,
+            "minDays":7,
+            "recommendations":3,
+            "expectedIncreasedOfViews":6.1
+         },
+         {
+            "maxDays":7,
+            "minDays":5,
+            "recommendations":2,
+            "expectedIncreasedOfViews":2.6
+         },
+         {
+            "maxDays":5,
+            "minDays":0,
+            "recommendations":1,
+            "expectedIncreasedOfViews":4.7
+         }
+      ]
    },
    {
       "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44715/ISI-V-0805 48992 44715",
       "title":"Delaporte",
       "image":"http://images.ciirus.com/properties/55693/270690/images/W323.png",
-      "_boost":{
+      "availability":{
+         "bookingWindow":150,
+         "daysAvailablewithinBookingWindow":35,
+         "daysAvailableWithin30Days":11,
+         "daysAvailableWithin60Days":11,
+         "daysAvailableWithin90Days":35
+      },
+      "boost":{
          "opportunities":{
             "creditBalance":100,
             "opportunities":{
@@ -103,7 +263,51 @@
                "forecastedRankHigh":1
             }
          }
-      }
+      },
+      "recommendedChanges":[
+         {
+            "maxDays":90,
+            "minDays":60,
+            "recommendations":5,
+            "expectedIncreasedOfViews":3.9
+         },
+         {
+            "maxDays":60,
+            "minDays":45,
+            "recommendations":5,
+            "expectedIncreasedOfViews":2.5
+         },
+         {
+            "maxDays":45,
+            "minDays":30,
+            "recommendations":5,
+            "expectedIncreasedOfViews":5.6
+         },
+         {
+            "maxDays":30,
+            "minDays":14,
+            "recommendations":3,
+            "expectedIncreasedOfViews":8.3
+         },
+         {
+            "maxDays":14,
+            "minDays":7,
+            "recommendations":3,
+            "expectedIncreasedOfViews":6.1
+         },
+         {
+            "maxDays":7,
+            "minDays":5,
+            "recommendations":2,
+            "expectedIncreasedOfViews":2.6
+         },
+         {
+            "maxDays":5,
+            "minDays":0,
+            "recommendations":1,
+            "expectedIncreasedOfViews":4.7
+         }
+      ]
    },
    {
       "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48967 44673/ISI-V-0805 48967 44673",
