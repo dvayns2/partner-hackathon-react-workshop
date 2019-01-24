@@ -20,6 +20,15 @@ import PropertyDetails from './PropertyDetails/PropertyDetails';
 import Landing from './Landing/Landing';
 import HomePage from './HomePage/HomePage';
 import SinglePropertyPage from './SinglePropertyPage/SinglePropertyPage';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {main: '#116181'}, // Purple and green play nicely together.
+        secondary: {main: '#1ba49a'}, // This is just green.A700 as hex.
+    },
+    typography: {useNextVariants: true},
+});
 
 class App extends Component {
     constructor(props) {
@@ -33,19 +42,21 @@ class App extends Component {
 
     render() {
         return (
-            <div id="app-container">
-                {/* --- Header --- */}
-                <Header onClick={this.onSearchClicked}/>
+            <MuiThemeProvider theme={theme}>
+                <div id="app-container">
+                    {/* --- Header --- */}
+                    <Header onClick={this.onSearchClicked}/>
 
-                {/* --- Content (Routes) --- */}
-                <div id="app">
-                    {/* ADD NEW ROUTES HERE */}
-                    <Route path={`${this.props.match.path}demo`} component={Landing} exact/>
-                    <Route path={`${this.props.match.path}demo/:propertyId`} component={PropertyDetails}/>
-                    <Route path={`${this.props.match.path}home`} component={HomePage} exact/>
-                    <Route path={`${this.props.match.path}home/property/:externalId`} component={SinglePropertyPage}/>
+                    {/* --- Content (Routes) --- */}
+                    <div id="app">
+                        {/* ADD NEW ROUTES HERE */}
+                        <Route path={`${this.props.match.path}demo`} component={Landing} exact/>
+                        <Route path={`${this.props.match.path}demo/:propertyId`} component={PropertyDetails}/>
+                        <Route path={`${this.props.match.path}home`} component={HomePage} exact/>
+                        <Route path={`${this.props.match.path}home/property/:externalId`} component={SinglePropertyPage}/>
+                    </div>
                 </div>
-            </div>
+            </MuiThemeProvider>
         );
     }
 }
