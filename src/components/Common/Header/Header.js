@@ -19,31 +19,37 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import logo from '../../../static/images/VacayHome-Connect-Logo-white-text.png'
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: 1
+  },
+  appBar: {
+    backgroundColor: '#494949'
   },
   flex: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
   },
+  logo: {
+    maxHeight: 40
+  }
 };
 
 function ButtonAppBar(props) {
   const { classes } = props;
+
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.appBar} position="static">
         <Toolbar>
           <Typography variant="title" color="inherit" className={classes.flex}>
-            VacayHomeConnect
+            <a href="/home"><img src={logo} className={classes.logo} alt={'VacayHomeConnect logo'} /></a>
           </Typography>
-          <Button color="inherit" onClick={props.onClick}>Search</Button>
         </Toolbar>
       </AppBar>
     </div>
@@ -51,8 +57,7 @@ function ButtonAppBar(props) {
 }
 
 ButtonAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(ButtonAppBar);
