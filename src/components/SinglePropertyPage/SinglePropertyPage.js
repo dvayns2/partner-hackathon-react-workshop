@@ -207,9 +207,12 @@ class SinglePropertyPage extends Component {
                         <strong>There are still {mergedProperty.availability.daysAvailablewithinBookingWindow} of&nbsp;
                         {mergedProperty.availability.bookingWindow} days available for travelers to book.</strong>
                     </Typography>
-                    <Typography paragraph>
-                        <strong>Your property is ranked {mergedProperty.metrics.scorecard.marketRank.rankInMarket} out of&nbsp;
-                        {mergedProperty.metrics.market.marketSize}.</strong>
+                    <Typography variant="h6">
+                        Search Ranking
+                    </Typography>
+                    <Typography>
+                        Your property is ranked <strong>{mergedProperty.metrics.scorecard.marketRank.rankInMarket}</strong> out of&nbsp;
+                        {mergedProperty.metrics.market.marketSize}.
                     </Typography>
                 </CardContent>
                 <CardContent>
