@@ -1,82 +1,168 @@
 [
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44712/ISI-V-0805 48992 44712",
-        "title": "Absolutely Perfect",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ABSOLUTELY/L1.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44713/ISI-V-0805 48992 44713",
-        "title": "Coronado Arms",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ADAMS/L1.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44714/ISI-V-0805 48992 44714",
-        "title": "Island Sunrise",
-        "image": "http://images.ciirus.com/properties/49410/243091/images/hd/Front2.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44715/ISI-V-0805 48992 44715",
-        "title": "Delaporte",
-        "image": "http://images.ciirus.com/properties/55693/270690/images/W323.png"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48967 44673/ISI-V-0805 48967 44673",
-        "title": "Pacific Terrace",
-        "image": "https://photos.barefoot.com/v3cfir0115/images/properties/7040/bcv1.jpg?v=1283"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48968 44674/ISI-V-0805 48968 44674",
-        "title": "Sea Breeze",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALAMANDA5/L1.JPG"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44675/ISI-V-0805 48969 44675",
-        "title": "Pool Villa",
-        "image": "https://photos.barefoot.com/v3cfir0115/images/properties/7018/379W_new.jpg?v=2976"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44676/ISI-V-0805 48969 44676",
-        "title": "Crystal Shores",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALAMANDA7/L1.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44677/ISI-V-0805 48969 44677",
-        "title": "Pacific Palisades",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALBA/L1.JPG"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44678/ISI-V-0805 48969 44678",
-        "title": "Sea Mist",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ANCHOR/L1.JPG"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44679/ISI-V-0805 48969 44679",
-        "title": "Palmetto",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/BP4/L1.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44680/ISI-V-0805 48969 44680",
-        "title": "EveryBody Dream",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/BP5/L1.JPG"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48970 44681/ISI-V-0805 48970 44681",
-        "title": "Sandy Delight",
-        "image": "https://photos.barefoot.com/v3cysv1207/images/properties/7254/Light_House_1418_Gulf_shores_alabama_beach_vacation_condo_rental_%2819%29.jpg?v=51901"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 48971 44682/ISI-V-0805 48971 44682",
-        "title": "Beachy King",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/CABANA/L1.JPG"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 49005 44731/ISI-V-0805 49005 44731",
-        "title": "Blue Sky",
-        "image": "http://images.ciirus.com/properties/32253/247623/images/hd/7421SoireeWay-1.jpg"
-    },
-    {
-        "externalId": "PM/VACATIONSTOREBUILDER/ISI-V-0805 49006 44732/ISI-V-0805 49006 44732",
-        "title": "Grand Pointe",
-        "image": "http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/CABANA1/L1.JPG"
-    }
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44712/ISI-V-0805 48992 44712",
+      "title":"Absolutely Perfect",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ABSOLUTELY/L1.jpg",
+      "_boost":{
+         "opportunities":{
+            "creditBalance":352,
+            "opportunities":[
+               {
+                  "checkIn":"2019-02-01",
+                  "checkOut":"2019-02-08",
+                  "currentRankLow":151,
+                  "currentRankHigh":170,
+                  "strength":2,
+                  "opportunityCost":178,
+                  "forecastedRankLow":41,
+                  "forecastedRankHigh":50
+               },
+               {
+                  "checkIn":"2019-02-12",
+                  "checkOut":"2019-02-19",
+                  "currentRankLow":131,
+                  "currentRankHigh":150,
+                  "strength":1,
+                  "opportunityCost":178,
+                  "forecastedRankLow":91,
+                  "forecastedRankHigh":100
+               }
+            ]
+         }
+      }
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44713/ISI-V-0805 48992 44713",
+      "title":"Coronado Arms",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ADAMS/L1.jpg",
+      "_boost":{
+         "opportunities":{
+            "creditBalance":178,
+            "opportunities":[
+               {
+                  "checkIn":"2019-03-02",
+                  "checkOut":"2019-03-09",
+                  "currentRankLow":78,
+                  "currentRankHigh":85,
+                  "strength":1,
+                  "opportunityCost":89,
+                  "forecastedRankLow":30,
+                  "forecastedRankHigh":41
+               }
+            ]
+         }
+      }
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44714/ISI-V-0805 48992 44714",
+      "title":"Island Sunrise",
+      "image":"http://images.ciirus.com/properties/49410/243091/images/hd/Front2.jpg",
+      "_boost":{
+         "opportunities":{
+            "creditBalance":268,
+            "opportunities":[
+               {
+                  "checkIn":"2019-03-07",
+                  "checkOut":"2019-03-14",
+                  "currentRankLow":222,
+                  "currentRankHigh":240,
+                  "strength":2,
+                  "opportunityCost":189,
+                  "forecastedRankLow":130,
+                  "forecastedRankHigh":143
+               },
+               {
+                  "checkIn":"2019-02-20",
+                  "checkOut":"2019-02-27",
+                  "currentRankLow":209,
+                  "currentRankHigh":221,
+                  "strength":1,
+                  "opportunityCost":122,
+                  "forecastedRankLow":178,
+                  "forecastedRankHigh":192
+               }
+            ]
+         }
+      }
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48992 44715/ISI-V-0805 48992 44715",
+      "title":"Delaporte",
+      "image":"http://images.ciirus.com/properties/55693/270690/images/W323.png",
+      "_boost":{
+         "opportunities":{
+            "creditBalance":100,
+            "opportunities":{
+               "checkIn":1,
+               "checkOut":1,
+               "currentRankLow":1,
+               "currentRankHigh":1,
+               "strength":1,
+               "opportunityCost":1,
+               "forecastedRankLow":1,
+               "forecastedRankHigh":1
+            }
+         }
+      }
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48967 44673/ISI-V-0805 48967 44673",
+      "title":"Pacific Terrace",
+      "image":"https://photos.barefoot.com/v3cfir0115/images/properties/7040/bcv1.jpg?v=1283"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48968 44674/ISI-V-0805 48968 44674",
+      "title":"Sea Breeze",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALAMANDA5/L1.JPG"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44675/ISI-V-0805 48969 44675",
+      "title":"Pool Villa",
+      "image":"https://photos.barefoot.com/v3cfir0115/images/properties/7018/379W_new.jpg?v=2976"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44676/ISI-V-0805 48969 44676",
+      "title":"Crystal Shores",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALAMANDA7/L1.jpg"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44677/ISI-V-0805 48969 44677",
+      "title":"Pacific Palisades",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ALBA/L1.JPG"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44678/ISI-V-0805 48969 44678",
+      "title":"Sea Mist",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/ANCHOR/L1.JPG"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44679/ISI-V-0805 48969 44679",
+      "title":"Palmetto",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/BP4/L1.jpg"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48969 44680/ISI-V-0805 48969 44680",
+      "title":"EveryBody Dream",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/BP5/L1.JPG"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48970 44681/ISI-V-0805 48970 44681",
+      "title":"Sandy Delight",
+      "image":"https://photos.barefoot.com/v3cysv1207/images/properties/7254/Light_House_1418_Gulf_shores_alabama_beach_vacation_condo_rental_%2819%29.jpg?v=51901"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 48971 44682/ISI-V-0805 48971 44682",
+      "title":"Beachy King",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/CABANA/L1.JPG"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 49005 44731/ISI-V-0805 49005 44731",
+      "title":"Blue Sky",
+      "image":"http://images.ciirus.com/properties/32253/247623/images/hd/7421SoireeWay-1.jpg"
+   },
+   {
+      "externalId":"PM/VACATIONSTOREBUILDER/ISI-V-0805 49006 44732/ISI-V-0805 49006 44732",
+      "title":"Grand Pointe",
+      "image":"http://secure.instantsoftwareonline.com/StayUSA/PropertyImages/0805/CABANA1/L1.JPG"
+   }
 ]

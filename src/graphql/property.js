@@ -21,6 +21,22 @@ export default gql`
                     }
                 }
             }
+            boost {
+              opportunities {
+                    creditBalance
+                    title
+                    opportunities {
+                        checkIn
+                        checkOut
+                        currentRankLow
+                        currentRankHigh
+                        strength
+                        opportunityCost
+                        forecastedRankLow
+                        forecastedRankHigh
+                    }
+                }
+            }
         }
     }
 `;
