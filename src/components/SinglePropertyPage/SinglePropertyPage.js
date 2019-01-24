@@ -70,6 +70,9 @@ const styles = theme => ({
   },
   icon: {
       verticalAlign: 'middle'
+  },
+  checkbox: {
+      marginBottom: 20
   }
 });
 
@@ -85,38 +88,59 @@ export const getMockPropertyByExternalId = (externalId) => {
     return property;
 };
 
+const basePotentialSearchTraffic = 6.25;
+
 class SinglePropertyPage extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             expanded: false,
-            potentialSearchTraffic: 6.25
+            potentialSearchTraffic: basePotentialSearchTraffic,
+            minStayCheckedItems: new Map()
         };
+
+        this.handleMinStayCheckboxChanged = this.handleMinStayCheckboxChanged.bind(this);
     }
 
     handleExpandClick = () => {
       this.setState(state => ({ expanded: !state.expanded }));
     };
 
-    calculateBoost = (recommendedChange) => {
-        // DEBUG: remove this ...
-        console.log('📗  recommendedChanges', recommendedChange); /* eslint no-console: "off" */
-        
-    //   recommendedChanges.map((recommendedChange, i) => {
-    //     this.setState({boostTotal: this.state.boostTotal += 5});
-    //   });
+    handleMinStayCheckboxChanged = (e) => {
+        const name = e.target.name; // name is maxDays
+        const isChecked = e.target.checked;
+        const recommendedChanges = this.recommendedChanges;
+
+        this.setState(prevState => ({ minStayCheckedItems: prevState.minStayCheckedItems.set(name, isChecked) }), () => {
+            const checkedItems = Array.from(this.state.minStayCheckedItems);
+            const newPotentialSearchTraffic = checkedItems.reduce((accumulator, currentValue, currentIndex, array) => {
+                const maxDays = `${currentValue[0]}`;
+                const foundChange = recommendedChanges.find((change) => {
+                    return (
+                        change.maxDays.toString() === maxDays && currentValue[1] === true
+                    );
+                });
+                
+                return accumulator + (foundChange ? foundChange.expectedIncreasedOfViews : 0);
+            }, basePotentialSearchTraffic);
+            
+            this.setState({ potentialSearchTraffic: newPotentialSearchTraffic });
+        });
     }
 
     renderRecommendedMinStayChanges(recommendedChanges) {
         return recommendedChanges.map((recommendedChange, i) => {
+            const { classes } = this.props;
+
             return (
                 <FormControlLabel
                     key={i}
+                    className={classes.checkbox}
                     control={
                         <Checkbox
-                            checked={this.state.checkedA}
-                            onChange={this.calculateBoost(recommendedChange)}
+                            name={`${recommendedChange.maxDays}`}
+                            onChange={this.handleMinStayCheckboxChanged}
                             value={`${recommendedChange.expectedIncreasedOfViews}`}
                         />
                     }
@@ -149,6 +173,7 @@ class SinglePropertyPage extends Component {
           boostOpportunities = mergedProperty.boost.opportunities.opportunities.length
         }
         const subheaderText = `${boostOpportunities} opportunities to boost`;
+        this.recommendedChanges = mergedProperty.recommendedChanges;
 
         return (
             <Card className={classes.card}>
