@@ -24,6 +24,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { graphql } from 'react-apollo';
+import propertyQuery from '../../graphql/property';
+import properties from '../../data/properties.json';
 
 const styles = theme => ({
     card: {
@@ -43,6 +46,13 @@ export const urlEncodeExternalId = (externalId) => {
     let encodedUrl = encodeURI(externalId);
     encodedUrl = encodedUrl.replace(/\//ig, '%2F');
     return encodedUrl;
+};
+
+export const getMockPropertyByExternalId = (externalId) => {
+    const property = properties.find((property) => {
+        return property.externalId === externalId;
+    });
+    return property;
 };
 
 class PropertyListItem extends Component {
@@ -84,4 +94,6 @@ PropertyListItem.propTypes = {
     property: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(PropertyListItem);
+export default withStyles(styles)(graphql(propertyQuery, {
+    options: (ownProps) => ({variables: {propertyId: urlEncodeExternalId(ownProps.property.externalId)}})
+})(PropertyListItem));
