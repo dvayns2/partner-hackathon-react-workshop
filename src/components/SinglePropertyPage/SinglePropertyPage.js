@@ -147,7 +147,7 @@ class SinglePropertyPage extends Component {
                     label={
                         <Typography>
                             <strong>{`Within ${recommendedChange.minDays} to ${recommendedChange.maxDays} days`}</strong><br />
-                            {`Set your min stay to ${recommendedChange.recommendations} day to gain an expected ${recommendedChange.expectedIncreasedOfViews}% more pageviews`}
+                            {`Set your min stay to ${recommendedChange.recommendations} day(s) to increase your search traffic by ${recommendedChange.expectedIncreasedOfViews}%`}
                         </Typography>
                     }
                 />
