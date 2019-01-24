@@ -26,6 +26,8 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { graphql } from 'react-apollo';
 import propertyQuery from '../../graphql/property';
+import Loading from '../Common/Loading/Loading'
+import NotFound from '../Common/NotFound/NotFound';
 import properties from '../../data/properties.json';
 
 const styles = theme => ({
@@ -57,6 +59,14 @@ export const getMockPropertyByExternalId = (externalId) => {
 
 class PropertyListItem extends Component {
     render() {
+        if (this.props.data.loading) {
+            return <Loading />;
+        }
+        
+        if (!this.props.data.property) {
+            return <NotFound />;
+        }
+
         const { property, classes } = this.props;
 
         return (

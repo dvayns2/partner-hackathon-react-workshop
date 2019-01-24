@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -56,14 +56,14 @@ export const getMockPropertyByExternalId = (externalId) => {
 class SinglePropertyPage extends Component {
     render() {
         if (this.props.data.loading) {
-            return <Loading/>;
+            return <Loading />;
         }
         
         if (!this.props.data.property) {
-            return <NotFound/>;
+            return <NotFound />;
         }
 
-        const { /* property, */ classes } = this.props;
+        const { classes } = this.props;
         const externalId = urlDecodeExternalId(this.props.match.params.externalId);
         const property = getMockPropertyByExternalId(externalId);
 
