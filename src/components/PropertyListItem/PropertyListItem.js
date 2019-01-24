@@ -29,6 +29,7 @@ import propertyQuery from '../../graphql/property';
 import Loading from '../Common/Loading/Loading'
 import NotFound from '../Common/NotFound/NotFound';
 import properties from '../../data/properties.json';
+import _ from 'lodash';
 
 const styles = theme => ({
     card: {
@@ -55,6 +56,11 @@ export const urlEncodeExternalId = (externalId) => {
     return encodedUrl;
 };
 
+export const urlDecodeExternalId = (externalId) => {
+    let decodedUrl = decodeURIComponent(externalId);
+    return decodedUrl;
+};
+
 export const getMockPropertyByExternalId = (externalId) => {
     const property = properties.find((property) => {
         return property.externalId === externalId;
@@ -73,6 +79,10 @@ class PropertyListItem extends Component {
         }
 
         const { property, classes } = this.props;
+        const mergedProperty = Object.assign({}, property, this.props.data.property);
+
+        const rankInMarket = _.get(mergedProperty, 'metrics.scorecard.marketRank.rankInMarket');
+        const marketSize = _.get(mergedProperty, 'metrics.market.marketSize');
 
         return (
             <Card className={classes.card} key={property.externalId}>
@@ -85,6 +95,9 @@ class PropertyListItem extends Component {
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
                       {property.title}
+                    </Typography>
+                    <Typography>
+                        <strong>Rank:</strong> {rankInMarket} out of {marketSize}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
