@@ -58,7 +58,7 @@ class SinglePropertyPage extends Component {
         if (this.props.data.loading) {
             return <Loading/>;
         }
-        
+
         if (!this.props.data.property) {
             return <NotFound/>;
         }
@@ -66,6 +66,7 @@ class SinglePropertyPage extends Component {
         const { /* property, */ classes } = this.props;
         const externalId = urlDecodeExternalId(this.props.match.params.externalId);
         const property = getMockPropertyByExternalId(externalId);
+        const mergedProperty = Object.assign({}, property, this.props.data.property);
 
         return (
             <Grid container spacing={40}>
@@ -73,12 +74,12 @@ class SinglePropertyPage extends Component {
                     <Card className={classes.card}>
                         <CardMedia
                             className={classes.cardMedia}
-                            image={property.image}
+                            image={mergedProperty.image}
                             title="Image title"
                         />
                         <CardContent className={classes.cardContent}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                {property.title || 'Mock Title'}
+                                {mergedProperty.title || 'Mock Title'}
                             </Typography>
                             <Typography>
                                 {externalId}
