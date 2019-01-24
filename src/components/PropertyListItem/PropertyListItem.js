@@ -97,7 +97,7 @@ class PropertyListItem extends Component {
                       {property.title}
                     </Typography>
                     <Typography>
-                        <strong>Rank:</strong> {rankInMarket} out of {marketSize}
+                        <strong>Search Rank:</strong> {rankInMarket} out of {marketSize}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
